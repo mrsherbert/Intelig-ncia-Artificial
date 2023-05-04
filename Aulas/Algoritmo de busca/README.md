@@ -18,7 +18,9 @@ A busca cega se trata basicamente de uma busca ao qual inicialmente não se tem 
 
 A busca em largura busca apartir de um estado meta é vai visitando seus estados vizinhos. Inicialmente a busca começa no estaco inicial é vai percorrendo todos os nós que se encontram logo abaixo, partindo dos nós abaixo vai percorrendo os nós mais abaixo e seus respectivos vizinhos, e assim sucessivamente até que tenha alcançado o objetivo. O algoritmo será satisfeito perfeitamente, alcançara o objetivo com o menor custo possível, entretanto será consumido bastante memória RAM.
 
-\hfil ![Busca em largura](BLA.jpg) \hfil
+<p align="center">
+  <img width="460" height="300" src="https://picsum.photos/460/300">
+</p>
 
 ### Busca em custo uniforme / Uniform-cost search
 
