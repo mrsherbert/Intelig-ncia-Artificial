@@ -28,7 +28,7 @@ A busca em largura busca apartir de um estado meta é vai visitando seus estados
 Esse tipo de busca visa expandir os nós de acordo com o menor custo, sendo assim se busca o ramo com menor custo é o vai expandindo, mas a medida que o mesmo tem maior custo que outro ramo de nó, então se muda para o de menor custo é assim sucessivamente até que se chegue ao estado objetivo, seguindo uma ordem de expansão. A busca em custo uniforme pode não ser plausivel quando se tem muito nós e levar a caminhos não desejaveis, assim sendo pode consumir muito tempo.
 
 <p align="center">
-  <img width="687" height="182" src= BCU.jpg title="Uniform-cost search">
+  <img width="677" height="267" src= BCU.jpg title="Uniform-cost search">
 </p>
 
 ### Busca em profundidade /  Depth-first search
@@ -36,7 +36,7 @@ Esse tipo de busca visa expandir os nós de acordo com o menor custo, sendo assi
 A busca em profundidade consiste no algoritmo aprofundar seus nós a medida em que se tem nós ainda não explorados é se parar assim que o mesmo não tiver mais nós abaixo, a medida que não se tem mais nós em profundade o mesmo volta ao nó anterior é procura se tem é assim sucessivamente seguindo em profundidade. A vantagem da  busca em profundidade é que a mesma é capaz de procurar soluções um espaço de estados enorme, as desvantagens são de que ela não vai procurar sempre o menor custo é além disso pode ficar presa em sistemas de malha fechada.
 
 <p align="center">
-  <img width="687" height="182" src= BPR.jpg title="Depth-first search">
+  <img width="677" height="454" src= BPR.jpg title="Depth-first search">
 </p>
 
 ## Busca informada
@@ -48,7 +48,7 @@ Ao contrario da busca cega, onde não se sabe qual o melhor nó para se começar
 A busca gulosa tem como heuristica expandir os nós que estão mais proximos ao nó original, a distância do nó, desse modo o codigo não encontra realmente o melhor é menos custoso caminho, isso porque não leva em conta o custo total do inicio até o objetivo é muitas das vezes escolhe o proximo caminho com base em uma média dos caminhos proximos.
 
 <p align="center">
-  <img width="687" height="182" src= BGU.jpg title="greedy best-first search">
+  <img width="675" height="500" src= BGU.jpg title="greedy best-first search">
 </p>
 
 ### Algoritmo A* / A* search
@@ -56,7 +56,7 @@ A busca gulosa tem como heuristica expandir os nós que estão mais proximos ao 
 O algoritmo A expande busca expandir o nó que está com menor valor de custo, usando para isso uma função heuristica $$ f(n)=g(n)+h(n) $$ , o algoritmo A* tem muitos beneficios incluindo ser bem preciso uma vez que é um algoritmo muito mais preciso que a busca gulosa, eficiência devido ao fato de priorizar a melhor e promissora em em direção a solução é o fato de ser muito adaptavel a todo objetivo que se deseja.
 
 <p align="center">
-  <img width="687" height="182" src= APS.jpg title="A search">
+  <img width="543" height="787" src= APS.jpg title="A search">
 </p>
 
 ### RECURSIVE BEST-FIRST-SEARCH (RBFS)
