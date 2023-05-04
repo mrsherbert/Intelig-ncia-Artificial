@@ -18,18 +18,18 @@ A busca cega se trata basicamente de uma busca ao qual inicialmente não se tem 
 
 A busca em largura busca apartir de um estado meta é vai visitando seus estados vizinhos. Inicialmente a busca começa no estaco inicial é vai percorrendo todos os nós que se encontram logo abaixo, partindo dos nós abaixo vai percorrendo os nós mais abaixo e seus respectivos vizinhos, e assim sucessivamente até que tenha alcançado o objetivo. O algoritmo será satisfeito perfeitamente, alcançara o objetivo com o menor custo possível, entretanto será consumido bastante memória RAM.
 
-![Busca em largura](Busca em largura.jpg)
+![Busca em largura](Busca em largura.png)
 
 ### Busca em custo uniforme / Uniform-cost search
 
 Esse tipo de busca visa expandir os nós de acordo com o menor custo, sendo assim se busca o ramo com menor custo é o vai expandindo, mas a medida que o mesmo tem maior custo que outro ramo de nó, então se muda para o de menor custo é assim sucessivamente até que se chegue ao estado objetivo, seguindo uma ordem de expansão. A busca em custo uniforme pode não ser plausivel quando se tem muito nós e levar a caminhos não desejaveis, assim sendo pode consumir muito tempo.
 
-![Busca em custo uniforme](Busca em custo uniforme.jpg)
+![Busca em custo uniforme](Busca em custo uniforme.png)
 
 ### Busca em profundidade /  Depth-first search
 
 A busca em profundidade consiste no algoritmo aprofundar seus nós a medida em que se tem nós ainda não explorados é se parar assim que o mesmo não tiver mais nós abaixo, a medida que não se tem mais nós em profundade o mesmo volta ao nó anterior é procura se tem é assim sucessivamente seguindo em profundidade. A vantagem da  busca em profundidade é que a mesma é capaz de procurar soluções um espaço de estados enorme, as desvantagens são de que ela não vai procurar sempre o menor custo é além disso pode ficar presa em sistemas de malha fechada.
 
-![Busca em profundidade](Busca em profundidade.jpg)
+![Busca em profundidade](Busca em profundidade.png)
 
 ## Busca informada
