@@ -43,6 +43,10 @@ A busca em profundidade consiste no algoritmo aprofundar seus nós a medida em q
 
 Ao contrario da busca cega, onde não se sabe qual o melhor nó para se começar a busca, na busca informada se aproxima tal informação com base em informações que são dadas a maquina,embora isso seja bom devido ao fato de não ser uma busca exaustiva não se tem certeza do menor custo do programa nem mesmo outas soluções. Tais informações que são dadas previamente ao programa são chamadas de informações heuristicas ela geralmente informa uma distância do inicio até o destino como forma de estimativa para tal, isso com base em funções heuristicas, heuristicas são algoritmos que embora se use para a exploração o mapeamento é dado com base em informações pre-estabelecidas.
 
+## Funções heurísticas
+
+As funções heuróisticas são funções que descrevem a inteligência artificial o quão longe o mesmo está do objetivo, sendo utilizadas amplamente em buscas que envolvem um grande espaço de estados, podendo auxiliar fortemente o encontro das soluções em menos tempo é mais eficientemente, existem dois tipos de funções heurísticas, sendo funções heurísticas admissiveis se ela não superestima os caminhos para solução, é funções heurísticas consistentes que é uma função heurística que a estimativa de custo da função heurística do nó inicial para um sucessor nunca é maior do que a soma do custo do nó inicial até o sucessor e a estimativa de custo da função heurística do sucessor para o objetivo.
+
 ### Busca gulosa / greedy best-first search
 
 A busca gulosa tem como heuristica expandir os nós que estão mais proximos ao nó original, a distância do nó, desse modo o codigo não encontra realmente o melhor é menos custoso caminho, isso porque não leva em conta o custo total do inicio até o objetivo é muitas das vezes escolhe o proximo caminho com base em uma média dos caminhos proximos.
@@ -63,3 +67,14 @@ O algoritmo A expande busca expandir o nó que está com menor valor de custo, u
 
 Este é um algoritmo a* que tem como ideia limitar o número de nós da memoria, guardando apenas aqueles que foram expandidos, funciona expandindo o nó mais promissor, usando para isso uma função heuristica é por meio disso utiliza a busca em profundida limitada (depth-limited search)  para explorar os subcaminhos desse nó, caso a depth-limited search retornar resultado então se termina a busca, caso contrario novamente se inicia a busca, tal codigo tem os beneficios de evitar expansões desnecessarias é ser mais eficiente que grande parte de outros mecanismos de buscas.
 
+### Ambientes complexos
+
+Um ambiente complexo é um ambiente com diversas variaveis que estão em constante mudança, podendo apresentar sensores ou atuadores com defeito, bem como incertezas de acordo com o ambiente ou de acordo com o aparelho, assim o tornando muito dificil, a procura em ambientes complexos é uma área da inteligência artificial que se concentra em desenvolver algoritmos para o mesmo, o que se importa mais é em se chegar a solução para o problema em que estamos interessado e não como chega-se nele.
+
+### Busca local
+
+A busca local se concentra em operar por meio dos estados vizinhos sem acompanhar os caminhos que se deu, nem os estados já alcançados, eles não se concentram em se encontrar a parte menos cara, entretanto em te dar uma solução rasoavel usando pouca memória. Sendo a função heurística representante do objetivo o que se procura encontrar é o maior valor de pico, se for o custo o objetivo é de se encontrar o menor pico.
+
+### Algoritmos genéticos
+
+São uma técnica de busca inspirada na seleção natural é na genética, são algortimos que buscam uma população de soluções e evoluindo essa população ao longo de várias gerações carregam informações dos genés anteriores. A cada geração, as soluções melhores são selecionadas para se tornarem pais de uma nova geração, enquanto as soluções piores são eliminadas, podendo ocorrer mutações durante a combinação dos DNAs.
