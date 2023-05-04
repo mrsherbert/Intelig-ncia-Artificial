@@ -20,7 +20,7 @@ A busca em largura busca apartir de um estado meta é vai visitando seus estados
 
 <p align="center">
   <img width="687" height="182" src= BLA.jpg title="Breadth-first search">
-  <center><b>Breadth-first search</b></center>
+  <p><center>Breadth-first search</center></p>
 </p>
 
 ### Busca em custo uniforme / Uniform-cost search
