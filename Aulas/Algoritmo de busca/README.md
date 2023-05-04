@@ -60,4 +60,5 @@ O algoritmo A expande busca expandir o nó que está com menor valor de custo, u
 
 ### RECURSIVE BEST-FIRST-SEARCH (RBFS)
 
-Este é um algoritmo a* que tem como ideia limitar o número de nós da memoria, guardando apenas aqueles que foram expandidos
+Este é um algoritmo a* que tem como ideia limitar o número de nós da memoria, guardando apenas aqueles que foram expandidos, funciona expandindo o nó mais promissor, usando para isso uma função heuristica é por meio disso utiliza a busca em profundida limitada (depth-limited search)  para explorar os subcaminhos desse nó, caso a depth-limited search retornar resultado então se termina a busca, caso contrario novamente se inicia a busca, tal codigo tem os beneficios de evitar expansões desnecessarias é ser mais eficiente que grande parte de outros mecanismos de buscas.
+
