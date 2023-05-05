@@ -20,7 +20,7 @@ A busca em largura busca apartir de um estado meta é vai visitando seus estados
 
 <p align="center">
   <img width="687" height="182" src= BLA.jpg title="Breadth-first search">
-  <h1 align="center">Breadth-first search</h1>
+  <h6 align="center">Breadth-first search</h6>
 </p>
 
 
@@ -30,7 +30,7 @@ Esse tipo de busca visa expandir os nós de acordo com o menor custo, sendo assi
 
 <p align="center">
   <img width="677" height="267" src= BCU.jpg title="Uniform-cost search">
-  <h1 align="center">Uniform-cost search</h1>
+  <h6 align="center">Uniform-cost search</h6>
 </p>
 
 ### Busca em profundidade /  Depth-first search
@@ -39,7 +39,7 @@ A busca em profundidade consiste no algoritmo aprofundar seus nós a medida em q
 
 <p align="center">
   <img width="677" height="454" src= BPR.jpg title="Depth-first search">
-  <h1 align="center">Depth-first search</h1>
+  <h6 align="center">Depth-first search</h6>
 </p>
 
 ## Busca informada
@@ -48,7 +48,7 @@ Ao contrario da busca cega, onde não se sabe qual o melhor nó para se começar
 
 ## Funções heurísticas
 
-As funções heuróisticas são funções que descrevem a inteligência artificial o quão longe o mesmo está do objetivo, sendo utilizadas amplamente em buscas que envolvem um grande espaço de estados, podendo auxiliar fortemente o encontro das soluções em menos tempo é mais eficientemente, existem dois tipos de funções heurísticas, sendo funções heurísticas admissiveis se ela não superestima os caminhos para solução, é funções heurísticas consistentes que é uma função heurística que a estimativa de custo da função heurística do nó inicial para um sucessor nunca é maior do que a soma do custo do nó inicial até o sucessor e a estimativa de custo da função heurística do sucessor para o objetivo, tais funções podem ser representadas por $$ f(n) $$ onde n é o nó da arvore é sendo assim $$ f $$ será portanto a relação que controla tal heurística.
+As funções heuróisticas são funções que descrevem a inteligência artificial o quão longe o mesmo está do objetivo, sendo utilizadas amplamente em buscas que envolvem um grande espaço de estados, podendo auxiliar fortemente o encontro das soluções em menos tempo é mais eficientemente, existem dois tipos de funções heurísticas, sendo funções heurísticas admissiveis se ela não superestima os caminhos para solução, é funções heurísticas consistentes que é uma função heurística que a estimativa de custo da função heurística do nó inicial para um sucessor nunca é maior do que a soma do custo do nó inicial até o sucessor e a estimativa de custo da função heurística do sucessor para o objetivo, tais funções podem ser representadas por $$\f(n)$$ onde n é o nó da arvore é sendo assim $$ f $$ será portanto a relação que controla tal heurística.
 
 ### Busca gulosa / greedy best-first search
 
@@ -56,16 +56,16 @@ A busca gulosa tem como heuristica expandir os nós que estão mais proximos ao 
 
 <p align="center">
   <img width="675" height="700" src= BGU.jpg title="greedy best-first search">
-  <h1 align="center">greedy best-first search</h1>
+  <h6 align="center">greedy best-first search</h6>
 </p>
 
 ### Algoritmo A* / A* search
 
-O algoritmo A expande busca expandir o nó que está com menor valor de custo, usando para isso uma função heuristica $$ f(n)=g(n)+h(n) $$ , o algoritmo A* tem muitos beneficios incluindo ser bem preciso uma vez que é um algoritmo muito mais preciso que a busca gulosa, eficiência devido ao fato de priorizar a melhor e promissora em em direção a solução é o fato de ser muito adaptavel a todo objetivo que se deseja.
+O algoritmo A expande busca expandir o nó que está com menor valor de custo, usando para isso uma função heuristica $$\f(n)=g(n)+h(n)$$ , o algoritmo A* tem muitos beneficios incluindo ser bem preciso uma vez que é um algoritmo muito mais preciso que a busca gulosa, eficiência devido ao fato de priorizar a melhor e promissora em em direção a solução é o fato de ser muito adaptavel a todo objetivo que se deseja.
 
 <p align="center">
   <img width="543" height="787" src= APS.jpg title="A search">
-  <h1 align="center">greedy best-first search</h1>
+  <h6 align="center">greedy best-first search</h6>
 </p>
 
 ### RECURSIVE BEST-FIRST-SEARCH (RBFS)
