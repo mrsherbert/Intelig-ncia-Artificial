@@ -20,8 +20,9 @@ A busca em largura busca apartir de um estado meta é vai visitando seus estados
 
 <p align="center">
   <img width="687" height="182" src= BLA.jpg title="Breadth-first search">
-  <p><center>Breadth-first search</center></p>
+  <h1 align="center">Breadth-first search</h1>
 </p>
+
 
 ### Busca em custo uniforme / Uniform-cost search
 
@@ -29,6 +30,7 @@ Esse tipo de busca visa expandir os nós de acordo com o menor custo, sendo assi
 
 <p align="center">
   <img width="677" height="267" src= BCU.jpg title="Uniform-cost search">
+  <h1 align="center">Uniform-cost search</h1>
 </p>
 
 ### Busca em profundidade /  Depth-first search
@@ -37,6 +39,7 @@ A busca em profundidade consiste no algoritmo aprofundar seus nós a medida em q
 
 <p align="center">
   <img width="677" height="454" src= BPR.jpg title="Depth-first search">
+  <h1 align="center">Depth-first search</h1>
 </p>
 
 ## Busca informada
@@ -45,14 +48,15 @@ Ao contrario da busca cega, onde não se sabe qual o melhor nó para se começar
 
 ## Funções heurísticas
 
-As funções heuróisticas são funções que descrevem a inteligência artificial o quão longe o mesmo está do objetivo, sendo utilizadas amplamente em buscas que envolvem um grande espaço de estados, podendo auxiliar fortemente o encontro das soluções em menos tempo é mais eficientemente, existem dois tipos de funções heurísticas, sendo funções heurísticas admissiveis se ela não superestima os caminhos para solução, é funções heurísticas consistentes que é uma função heurística que a estimativa de custo da função heurística do nó inicial para um sucessor nunca é maior do que a soma do custo do nó inicial até o sucessor e a estimativa de custo da função heurística do sucessor para o objetivo.
+As funções heuróisticas são funções que descrevem a inteligência artificial o quão longe o mesmo está do objetivo, sendo utilizadas amplamente em buscas que envolvem um grande espaço de estados, podendo auxiliar fortemente o encontro das soluções em menos tempo é mais eficientemente, existem dois tipos de funções heurísticas, sendo funções heurísticas admissiveis se ela não superestima os caminhos para solução, é funções heurísticas consistentes que é uma função heurística que a estimativa de custo da função heurística do nó inicial para um sucessor nunca é maior do que a soma do custo do nó inicial até o sucessor e a estimativa de custo da função heurística do sucessor para o objetivo, tais funções podem ser representadas por $$ f(n) $$ onde n é o nó da arvore é sendo assim $$ f $$ será portanto a relação que controla tal heurística.
 
 ### Busca gulosa / greedy best-first search
 
 A busca gulosa tem como heuristica expandir os nós que estão mais proximos ao nó original, a distância do nó, desse modo o codigo não encontra realmente o melhor é menos custoso caminho, isso porque não leva em conta o custo total do inicio até o objetivo é muitas das vezes escolhe o proximo caminho com base em uma média dos caminhos proximos.
 
 <p align="center">
-  <img width="675" height="500" src= BGU.jpg title="greedy best-first search">
+  <img width="675" height="700" src= BGU.jpg title="greedy best-first search">
+  <h1 align="center">greedy best-first search</h1>
 </p>
 
 ### Algoritmo A* / A* search
@@ -61,20 +65,21 @@ O algoritmo A expande busca expandir o nó que está com menor valor de custo, u
 
 <p align="center">
   <img width="543" height="787" src= APS.jpg title="A search">
+  <h1 align="center">greedy best-first search</h1>
 </p>
 
 ### RECURSIVE BEST-FIRST-SEARCH (RBFS)
 
 Este é um algoritmo a* que tem como ideia limitar o número de nós da memoria, guardando apenas aqueles que foram expandidos, funciona expandindo o nó mais promissor, usando para isso uma função heuristica é por meio disso utiliza a busca em profundida limitada (depth-limited search)  para explorar os subcaminhos desse nó, caso a depth-limited search retornar resultado então se termina a busca, caso contrario novamente se inicia a busca, tal codigo tem os beneficios de evitar expansões desnecessarias é ser mais eficiente que grande parte de outros mecanismos de buscas.
 
-### Ambientes complexos
+### Procura em ambientes complexos
 
-Um ambiente complexo é um ambiente com diversas variaveis que estão em constante mudança, podendo apresentar sensores ou atuadores com defeito, bem como incertezas de acordo com o ambiente ou de acordo com o aparelho, assim o tornando muito dificil, a procura em ambientes complexos é uma área da inteligência artificial que se concentra em desenvolver algoritmos para o mesmo, o que se importa mais é em se chegar a solução para o problema em que estamos interessado e não como chega-se nele.
+Um ambiente complexo é um ambiente com diversas variaveis que estão em constante mudança, podendo apresentar sensores ou atuadores com defeito, bem como incertezas de acordo com o ambiente ou de acordo com o aparelho, assim o tornando muito dificil, a procura em ambientes complexos é uma área da inteligência artificial que se concentra em desenvolver algoritmos para o mesmo, o que se importa mais é em se chegar a solução para o problema em que estamos interessado e não como chega-se nele. Para aprender a se desenvolver os algoritmos desse tipo de busca podem, fazer buscam em arvores proximas, aprender por meio de reforço, utilizar busca de monte carlo ou por meio de algoritmos genéticos.
 
 ### Busca local
 
-A busca local se concentra em operar por meio dos estados vizinhos sem acompanhar os caminhos que se deu, nem os estados já alcançados, eles não se concentram em se encontrar a parte menos cara, entretanto em te dar uma solução rasoavel usando pouca memória. Sendo a função heurística representante do objetivo o que se procura encontrar é o maior valor de pico, se for o custo o objetivo é de se encontrar o menor pico.
+A busca local se concentra em operar por meio dos estados vizinhos a uma resposta sem acompanhar os caminhos nem os estados já alcançados, que se deu sendo assim buscando encontrar a melhor solução, eles não se concentram em se encontrar a parte menos cara, entretanto em te dar uma solução razoavel usando pouca memória. Pode-se usar de diversas estratégias de busca local, Hill Climbing - a mesma se concentrar em encontrar a solução de uma função heurística que define um objetivo é desse modo se encontra-ra o maximo do picoda função objective x state, Gradiente Descent - por meio de uma função heurística que define um custo se busca encontrar o menor pico da função objective x state, Bean Search - essa tecnica consiste em manter varias soluções é buscar as soluções vizinhas de modo a encontrar a melhor possivel, Simulated Annealing - utiliza de probabilidades vizinhas as soluções para encontrar a melhor solução, algortimos géneticos - será discutida a seguir.
 
 ### Algoritmos genéticos
 
-São uma técnica de busca inspirada na seleção natural é na genética, são algortimos que buscam uma população de soluções e evoluindo essa população ao longo de várias gerações carregam informações dos genés anteriores. A cada geração, as soluções melhores são selecionadas para se tornarem pais de uma nova geração, enquanto as soluções piores são eliminadas, podendo ocorrer mutações durante a combinação dos DNAs.
+São uma técnica de busca inspirada na seleção natural é na genética, são algortimos que buscam uma população de soluções e evoluindo essa população ao longo de várias gerações carregam informações dos genés anteriores. A cada geração, as soluções melhores são selecionadas para se tornarem pais de uma nova geração, enquanto as soluções piores são eliminadas, podendo ocorrer mutações durante a combinação dos DNAs, para essa analogia entre os mesmos se utiliza dos parâmetros; tamanho da população, representação de cada individuo, número de parentes, seleção, processo de recombinação, taxa de mutação e nova geração, o método se dá por meio do seguinte, primeiro se inicializa a população com diversas combinações possível de maneira a ter diversas posições é exemplos possiveis, com isso avalia-se a possivel solução por meio dessas populações, seleciona as mais aptas a proxima geração, realiza a combinação genética, avalia a nova geração em busca da solução é retoma o processo de combinação caso não a alcançou.
