@@ -2,11 +2,11 @@
 A **representação atômica e a faturada** abordadas anteriormente no curso serão de bastante utilizade para a parte de satisfação de condições, basicamente recapitulando, a representação atômica diz respeito a respeito a representação de cada estado como apenas um bloco ou uma unidade sem atributos, enquanto a fatorada os estados adquirem atributos internos que as caracterizam, no caso de problemas de satisfação de condições o que se usa a representação fatorada o qual por meio dos atributos aos estados procuraremos suprimir uma condição dada pelo usuario.
 
 <p align="center">
-  <img width="687" height="182" src= IMG2.jpg title="Breadth-first search">
+  <img width="687" height="182" src= IMG2.png title="Breadth-first search">
 </p>
 
 <p align="center">
-  <img width="687" height="182" src= img3.jpg title="Breadth-first search">
+  <img width="687" height="182" src= img3.png title="Breadth-first search">
 </p>
 
 **CSP (Constraint Satisfaction Problem)** é um conceito importante na inteligência artificial que consiste em um problema em que o objetivo é encontrar uma atribuição de valores às variáveis (Conjunto de atributos que recebem valor) de um domínio (conjuntos de valores possíveis para cada variável.), de modo que todas as restrições (São as condições que devem ser satisfeitas pelas combinações de valores atribuídos às variáveis) sejam satisfeitas, são muito utilizados em problemas complexos de inteligência artificial.
@@ -25,10 +25,10 @@ O **algoritmo AC-3 (Arc-Consistency 3)** é um algoritmo usado na resolução de
 Abaixo um exemplo de codigo de backtracking csp.
 
 <p align="center">
-  <img width="687" height="182" src= img4.jpg title="Breadth-first search">
+  <img width="687" height="182" src= img4.png title="Breadth-first search">
 </p>
 <p align="center">
-  <img width="687" height="182" src= img5.jpg title="Breadth-first search">
+  <img width="687" height="182" src= img5.png title="Breadth-first search">
 </p>
 
 **Busca local para CSP:** pega as variáveis que ainda possuem inconsistência é se checa as heuristicas para verificar as variáveis de minimizando os estados em busca aleatória e assim realizando uma resolução possível minimizando o menor número de regras possíveis.
@@ -36,21 +36,21 @@ Abaixo um exemplo de codigo de backtracking csp.
 Abaixo um exemplo de codigo de backtracking csp.
 
 <p align="center">
-  <img width="687" height="182" src= img6.jpg title="Breadth-first search">
+  <img width="687" height="182" src= img6.png title="Breadth-first search">
 </p>
 
 <p align="center">
-  <img width="687" height="182" src= img7.jpg title="Breadth-first search">
+  <img width="687" height="182" src= img7.png title="Breadth-first search">
 </p>
 
 No problema de satisfação de restrições temos as **estruturas** do codigo, que é responsavel pela modelagem é resolução do problema o problema pode ser colocado em uma arvoré contendo um nó raiz o qual se começara o problema, os nós filhos que descendem dos nós pais, os caminhos que é a conexão entre dois nós é a hierarquia ue coloca cada nó e camiinho em suas devidas posições ou classificações, podendo as arvores se decompor em arvores menores é assim dividir a constituição do problema.
 
 <p align="center">
-  <img width="687" height="182" src= img1.jpg title="Breadth-first search">
+  <img width="687" height="182" src= img1.png title="Breadth-first search">
 </p>
 
 <p align="center">
-  <img width="687" height="182" src= img8.jpg title="Breadth-first search">
+  <img width="687" height="182" src= img8.png title="Breadth-first search">
 </p>
 
 As aplicações dos problemas de satisfação de condição por exemplo tem muitas aplicações empresariais como agendamentos e planejamentos de qualquer tipo em um evento ou transporte público por exemplo, alocação de recursos atribuição de recursos a maquinas para disciplina, roteamento e entrega planejamento de rotas ou tarefas para entrega, design e layout da empresa ou dos sites podem ser mais bem administrados e diagnosticos é soluções de problemas nas diversas maquinas.
